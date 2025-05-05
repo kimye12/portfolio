@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/mobile_360.css">
+  <link rel="stylesheet" href="css/tablet_768.css">
+  <link rel="stylesheet" href="css/pc_1024.css">
+  <link rel="stylesheet" href="css/pc_1650.css">
+  <!-- <link rel="stylesheet" href="css/shilla.css"> -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <title>SHILLA HOTEL</title>
+</head>
+<body>
+  
+  <header>
+    <div class="modal"></div>
+    <div class="header_center">
+      <h1 class="ir_pm"><a href="#">THE SHILLA HOTELS & RESORTS</a></h1>
+      <button type="button" class="m_btn ir_pm">
+        <span>메뉴열기</span>
+        <span></span> 
+        <span></span>
+      </button>
+      
+      
+      
+      <ul class="gnb_left_768">
+        <li><a href="#">호텔찾기</a></li>
+        <li><a href="#">예약</a></li>
+      </ul>
+      <nav class="header_gnb_wrap">
+        <h2 class="screen_out">header_gnb</h2>
+        <button type="button" class="close_btn ir_pm">
+          <span>메뉴닫기</span>
+          <span></span>
+          
+        </button>
+        <ul class="header_gnb_left">
+          <li><a href="#">호텔찾기</a></li>
+          <div class="wrap">
+            <div class="ecle"></div>
+            <div class="line"></div>
+          </div>
+          <li><a href="#">예약</a></li>
+        </ul>
+        <ul class="header_gnb_right">
+          <li><a href="#">호텔신라 소개</a></li>
+          <li><a href="#">멤버쉽</a></li>
+          <li><a href="#">더 신라숍</a></li>
+        </ul>
+        
+        
+      </nav>
+    </div>
+  </header>
+  <main>
+   
+      <section id="visual">
+        <div class="visual_section">
+          <h2 class="screen_out">visual</h2>
+          <div class="fade_slider">
+            <div>
+              <h3>The Shilla Hotel exceeded expectations</h3>
+              <div class="fade_back"></div>
+            </div>
+            <!-- image -->
+          </div>
+        </div>
+        <div class="check_bar">
+          
+          <form action="#" class="check_gnb">
+            <div class="check_gnb_wrap">
+              
+              <div class="check_gnb_box">
+                <div class="check_hotel">
+                  <label for="hotel">호텔 또는 도시</label>
+                  <select name="" id="lang" >
+                    <option value="">호텔을 선택해주세요.</option>
+                    <option value="서울신라호텔">서울신라호텔</option>
+                    <option value="신라스테이 광화문">신라스테이 광화문</option>
+                    <option value="신라스테이 마포">신라스테이 마포</option>
+                    <option value="신라스테이 서대문">신라스테이 서대문</option>
+                    <option value="신라스테이 역삼">신라스테이 역삼</option>
+                    <option value="신라스테이 구로">신라스테이 구로</option>
+                    <option value="신라스테이 삼성">신라스테이 삼성</option>
+                    <option value="제주신라호텔">제주신라호텔</option>
+                    <option value="신라스테이 동탄">신라스테이 동탄</option>
+                    <option value="신라스테이 천안">신라스테이 천안</option>
+                    <option value="신라스테이 울산">신라스테이 울산</option>
+                    <option value="신라스테이 여수">신라스테이 여수</option>
+                    <option value="신라스테이 서부산">신라스테이 서부산</option>
+                    <option value="신라스테이 해운대">신라스테이 해운대</option>
+                    <option value="신라스테이 제주">신라스테이 제주</option>
+                    <option value="신라스테이 플러스 이호테우">플러스 이호테우</option>
+                    <option value="신라모노그램 다낭">신라모노그램 다낭</option>
+                  </select>  
+
+                  <button type="button" class="first_btn next_btn">다음</button>
+                </div>
+                
+                <div class="check_date_in">
+                  <div>
+                    <label for="check_in">체크인</label>
+                    <input type="date" class="check_in" name="check_in" value="2018-07-22" min="2018-01-01" max="2040-01-01" />
+                    <div class="btn_box">
+                      <span class="prev_btn1">이전</span>
+                      <button type="button" class="second_btn next_btn">다음</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="check_date_out">
+                  <div>
+                    <label for="check_out">체크아웃</label>
+                    <input type="date" class="check_out" name="check_out" value="2018-07-23" min="2018-01-01" max="2040-01-01" />
+                    <div class="btn_box">
+                      <span class="prev_btn2">이전</span>
+                      <button type="button" class="third_btn next_btn">다음</button>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="check_num">
+                  <div class="check_num_box">
+                    <div>
+                      <label for="room">객실</label>
+                      <input type="number" class="number_1" name="number_1" value="0" min="0" max="100" />
+                      
+                    </div>
+                    <div>
+                      <label for="adult">성인</label>
+                      <input type="number" class="number_2" name="number_2" value="0" min="0" max="100" />
+                      
+                    </div>
+                    <div>
+                      <label for="children">어린이</label>
+                      <input type="number" class="number_3" name="number_3" value="0" min="0" max="100" />
+                      
+                    </div>
+                    <div>
+                      <label for="child">유아</label>
+                      <input type="number" class="number_4" name="number_4" value="0" min="0" max="100" />
+                      
+                    </div>
+                  </div>
+                  <div class="btn_box2">
+                    <span class="prev_btn3">이전</span>
+                    <button type="submit" class="search_btn">검색</button>
+                  </div>
+                </div>
+              </div>
+              
+            
+
+              <div class="check_bar_line">
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    
+
+
+    
+    <section id="company">
+      
+      <div class="company_center">
+        <div class="text_box1">
+          <h2>The Best Hospitality Company</h2>
+          <div class="text_box1_line"></div>
+          <p>호텔신라는 ‘최고의 호스티팔리티 기업’을 목표로 오랫동안 품위와 젼통을 유지하며 고객의 마음을 사로잡아 왔습니다.</p>
+          <p>LHW 가입을 통해 세계 최고의 럭셔리 호텔들과 어깨를 나란히 하고, <br>전통 위에 현대적인 디자인 요소를 가미하며 삶에 여유와 품격 더하는
+            프리미엄 라이프스타일 공간으로 변화를 거듭해 왔습니다.</p>
+          
+          
+            <p>호텔신라는 앞으로도 끊임없는 창조적 혁신과 도전을 바탕으로 차별화된 최상의 가치를 선사하는 <br>
+            글로벌 호스피탈리티 명문 기업으로 나아갈 것입니다.</p>
+        </div> 
+      </div>
+      <div class="drag_wrap">
+        <div class="drag_box1">
+          <div class="drag_item">
+            <a href="#">
+              <img src="image/section_1/first.jpg" class="drag_img">
+            </a>
+          </div>
+          <div class="drag_item">
+            <a href="#">
+              <img src="image/section_1/second.jpg" class="drag_img">
+            </a>
+          </div>
+          <div class="drag_item">
+            <a href="#">
+              <img src="image/section_1/third.jpg" class="drag_img">
+            </a>
+          </div>
+          <div class="drag_item">
+            <a href="#">
+              <img src="image/section_1/four.jpg" class="drag_img">
+            </a>
+          </div>
+        </div>
+        
+      </div>
+       
+      <div class="drag_btn_box">
+        <a href="#" class="drag_btn">바로가기</a>
+      </div>
+    </section>
+
+
+
+
+    <section id="special_offer">
+      <div class="special_offer_center">
+        <div class="h2_wrap_2">
+          <h2>스페셜오퍼</h2>
+          <div class="line_wrap_2"></div>
+        </div>
+        <div class="special_offer_wrap">
+          <ul class="gnb_2">  
+            <h3 class="shilla_hotel_h3"><a href="#" >SHILLA HOTEL</a></h3>
+            <li class="shilla_hotel">
+              <div class="hotel_box">
+                <div class="hotel_box_wrap">
+                    <div class="hotel_1 hotel_slide_box">
+                      <div class="text_box_2">
+                        <div class="text_border_2">
+                          <p>서울신라호텔</p>
+                        </div>
+                        <p>Reward Joyful Moment At Urban Cabana</p>  
+                      </div>
+                    </div>
+                    
+                  <!-- 01 -->
+
+
+                  
+                    <div class="hotel_2 hotel_slide_box">
+                      <div class="text_box_2">
+                        <div class="text_border_2">
+                          <p>제주신라호텔</p>
+                        </div>
+                        <p>Rewards Awesome Autumn</p>    
+                      </div>
+                    </div>
+                  
+                  <!-- 02 -->
+
+
+
+                  <div class="hotel_3 hotel_slide_box">
+                    <div class="text_box_2">
+                      <div class="text_border_2">
+                        <p>제주신라호텔</p>
+                      </div>
+                      <p>Rewards Dear My Family</p>  
+                    </div>
+                  </div>
+                  <!-- 03 -->
+                    <div class="hotel_4 hotel_slide_box">
+                      <div class="text_box_2">
+                        <div class="text_border_2">
+                          <p>서울신라호텔</p>
+                        </div>
+                        <p>Reward Joyful Moment At Urban Cabana</p>  
+                      </div>
+                    </div>
+                  
+                  <!-- 01-1 -->
+
+
+                  
+                    <div class="hotel_5 hotel_slide_box">
+                      <div class="text_box_2">
+                        <div class="text_border_2">
+                          <p>제주신라호텔</p>
+                        </div>
+                        <p>Rewards Awesome Autumn</p>  
+                      </div>
+                    </div>
+                  
+                  <!-- 02-1 -->
+
+
+
+                  <div class="hotel_6 hotel_slide_box">
+                    <div class="text_box_2">
+                      <div class="text_border_2">
+                        <p>제주신라호텔</p>
+                      </div>
+                      <p>Rewards Dear My Family</p>  
+                    </div>
+                  </div>
+                  <!-- 03-1 -->
+                </div>
+
+              </div>
+              <div class="pager">
+                <div class="pause_btn_1 pause_btn"></div>
+                <span class="hotel_pager"></span>
+                <span class="active hotel_pager"></span>
+                <span class="hotel_pager"></span>
+              </div>
+            </li> 
+
+
+
+
+            <h3 class="shilla_monogram_h3"><a href="#" class="mono_a">SHILLA MONOGRAM</a></h3>
+            <li class="shilla_monogram">
+              <div class="monogram_box">
+                <div class="monogram_box_wrap">
+                    <div class="monogram_1 monogram_slide_box">
+                      <div class="text_box_2">
+                        <div class="text_border_2">
+                          <p>신라모노그램 다낭</p>
+                        </div>
+                        <p>Vietnam Discovery</p>  
+                      </div>
+                    </div>
+                  
+                  <!-- 01 -->
+
+
+                  
+                    <div class="monogram_2 monogram_slide_box">
+                      <div class="text_box_2">
+                        <div class="text_border_2">
+                          <p>신라모노그램 다낭</p>
+                        </div>
+                        <p>Charming vietnam</p>  
+                      </div>
+                    </div>
+                  
+                  <!-- 02 -->
+
+
+
+                  <div class="monogram_3 monogram_slide_box">
+                    <div class="text_box_2">
+                      <div class="text_border_2">
+                        <p>신라모노그램 다낭</p>
+                      </div>
+                      <p>Suites & Residences Experience</p>  
+                    </div>
+                  </div>
+                  <!-- 03 -->
+                    <div class="monogram_4 monogram_slide_box">
+                      <div class="text_box_2">
+                        <div class="text_border_2">
+                          <p>신라모노그램 다낭</p>
+                        </div>
+                        <p>Vietnam Discovery</p>  
+                      </div>
+                    </div>
+                  
+                  <!-- 01-1 -->
+
+
+                  
+                    <div class="monogram_5 monogram_slide_box">
+                      <div class="text_box_2">
+                        <div class="text_border_2">
+                          <p>신라모노그램 다낭</p>
+                        </div>
+                        <p>Charming vietnam</p>  
+                      </div>
+                    </div>
+                  
+                  <!-- 02-1 -->
+
+
+
+                  <div class="monogram_6 monogram_slide_box">
+                    <div class="text_box_2">
+                      <div class="text_border_2">
+                        <p>신라모노그램 다낭</p>
+                      </div>
+                      <p>Suites & Residences Experience</p>  
+                    </div>
+                  </div>
+                  <!-- 03-1 -->
+                </div>
+
+              </div>
+              <div class="pager_2">
+                <div class="pause_btn_2 pause_btn"></div>
+                <span class="monogram_pager"></span>
+                <span class="active monogram_pager"></span>
+                <span class="monogram_pager"></span>
+              </div>
+            </li> 
+
+
+
+
+            <h3 class="shilla_stay_h3"><a href="#">SHILLA STAY</a></h3>
+            <li class="shilla_stay">
+              <div class="stay_box">
+                <div class="stay_box_wrap">
+                    <div class="stay_1 stay_slide_box">
+                      <div class="text_box_2">
+                        <div class="text_border_2">
+                          <p>스테이 해운대</p>
+                        </div>
+                        <p>Busan Fireworks Festival</p>  
+                      </div>
+                    </div>
+                  
+                  <!-- 01 -->
+
+
+                  
+                    <div class="stay_2 stay_slide_box">
+                      <div class="text_box_2">
+                        <div class="text_border_2">
+                          <p>신라 스테이</p>
+                        </div>
+                        <p>Own Your Shilla Stay, Again</p>  
+                      </div>
+                    </div>
+                  
+                  <!-- 02 -->
+
+
+
+                  <div class="stay_3 stay_slide_box">
+                    <div class="text_box_2">
+                      <div class="text_border_2">
+                        <p>스테이 이호테우</p>
+                      </div>
+                      <p>Premium Special Day</p>  
+                    </div>
+                  </div>
+                  <!-- 03 -->
+                    <div class="stay_4 stay_slide_box">
+                      <div class="text_box_2">
+                        <div class="text_border_2">
+                          <p>스테이 해운대</p>
+                        </div>
+                        <p>Busan Fireworks Festival</p> 
+                      </div>
+                    </div>
+                  
+                  <!-- 01-1 -->
+
+
+                  
+                    <div class="stay_5 stay_slide_box">
+                      <div class="text_box_2">
+                        <div class="text_border_2">
+                          <p>신라 스테이</p>
+                        </div>
+                        <p>Own Your Shilla Stay, Again</p>    
+                      </div>
+                    </div>
+                  
+                  <!-- 02-1 -->
+
+
+
+                  <div class="stay_6 stay_slide_box">
+                    <div class="text_box_2">
+                      <div class="text_border_2">
+                        <p>스테이 이호테우</p>
+                      </div>
+                      <p>Premium Special Day</p>  
+                    </div>
+                  </div>
+                  <!-- 03-1 -->
+                </div>
+
+              </div>
+              <div class="pager_3">
+                <div class="pause_btn_3 pause_btn"></div>
+                <span class="stay_pager"></span>
+                <span class="active3 stay_pager"></span>
+                <span class="stay_pager"></span>
+              </div>
+            </li> 
+          </ul>  
+          
+        </div>
+      </div>
+    </section>
+
+    <section id="hotels">
+      
+        <div class="hotels_center">   
+          <div class="h2_wrap_3">
+            <h2>Hotels</h2>
+            <div class="line_wrap_3"></div>
+            <p class="hotels_p">
+              Premium Lifestyle Leading Company<br>
+              최고의 품격과 신뢰를 바탕으로 고객이 꿈꾸는 
+              라이프스타일을 제공하는 글로벌 선도기업
+            </p>
+          </div>
+          <div class="h3_wrap_3">
+            <h3 class="hotels_h3">THE SHIILLA HOTELS & RESORTS</h3>
+          </div>
+          <div class="slider_wrap_3">
+            <div class="left_slide_box">
+              <div class="left_slide_wrap">
+                <div>
+                  <div class="text_box_3">
+                    <div class="text_border_3">
+                      <p>SHILLA HOTEL</p>
+                    </div>
+                    <p>제주신라호텔</p>  
+                  </div>
+
+                </div>
+                <!-- 01 -->
+
+
+                <div>
+                  <div class="text_box_3">
+                    <div class="text_border_3">
+                      <p>SHILLA MONOGRAM</p>
+                    </div>
+                    <p>신라모노그램 다낭</p>  
+                  </div>
+                </div>
+                <!-- 02 -->
+
+
+                <div>
+                  <div class="text_box_3">
+                    <div class="text_border_3">
+                      <p>SHILLA HOTEL</p>
+                    </div>
+                    <p>서울신라호텔</p> 
+                  </div>
+                </div>
+                <!-- 03 -->
+
+
+                <div>
+                  <div class="text_box_3">
+                    <div class="text_border_3">
+                      <p>SHILLA STAY</p>
+                    </div>
+                    <p>스테이 이호테우</p>  
+                  </div>
+                </div>
+                <!-- 04 -->
+              </div>
+            </div>
+            <div class="right_slide_box">
+              <div class="right_slide_wrap">
+                <div>
+                  <div class="text_box_3">
+                      <div class="text_border_3">
+                        <p>SHILLA STAY</p>
+                      </div>
+                      <p>스테이 서부산</p>  
+                  </div>
+                </div>
+
+                
+                <!-- 01 -->
+
+                
+                <div>
+                  <div class="text_box_3">
+                    <div class="text_border_3">
+                      <p>SHILLA STAY</p>
+                    </div>
+                    <p>이호테우</p>  
+                  </div>
+                </div>
+                <!-- 02 -->
+
+
+                <div>
+                  <div class="text_box_3">
+                    <div class="text_border_3">
+                      <p>SHILLA STAY</p>
+                    </div>
+                    <p>스테이 여수</p>  
+                  </div>
+                </div>
+                <!-- 03 -->
+
+
+                <div>
+                  <div class="text_box_3">
+                    <div class="text_border_3">
+                      <p>SHILLA STAY</p>
+                    </div>
+                    <p>스테이 해운대</p>  
+                  </div>
+                </div>
+                <!-- 04 -->
+                
+              </div>
+          </div>
+          
+        </div>
+      
+    </section>
+
+
+    <section id="offers">
+      <div class="offers_center">
+        <div class="h2_wrap_4">
+          <h2>OFFERS</h2>
+
+          <p>Premium Lifestyle Leading Offers</p>
+        </div>
+      </div>
+      <div class="offers_box_wrap">
+        <div class="offers_box">
+          <div class="offers_item">
+            <a href="#">
+              <img src="image/section_4/div1.jpg" class="offers_img" alt="첫번째 오퍼이미지">
+              <div class="text_box_4">
+                <a href="#">신라 모노그램</a>
+                <div class="line_wrap_4_1"></div>
+                <a href="#">MONOGRAM VILLA</a>
+              </div>  
+            </a>
+          </div>
+          <div class="offers_item">
+            <a href="#">
+              <img src="image/section_4/div2.jpg" class="offers_img" alt="두번째 오퍼이미지">
+              <div class="text_box_4">
+                <a href="#">신라 스테이 여수</a>
+                <div class="line_wrap_4_1"></div>
+                <a href="#">Wonderful 2Nights (1+1)</a>
+              </div>
+            </a>
+          </div>
+          <div class="offers_item">
+            <a href="#">
+              <img src="image/section_4/div3.jpg" class="offers_img" alt="세번째 오퍼이미지">
+              <div class="text_box_4">
+                <a href="#">제주신라호텔</a>
+                <div class="line_wrap_4_1"></div>
+                <a href="#">Autumn Breeze</a>
+              </div>
+            </a>
+            
+          </div>
+        </div>
+      </div>
+      <div class="back_space"></div>
+      <div class="line_wrap_4">
+        <div></div>
+        <div></div>
+      </div>
+              
+              
+              
+          
+        
+      
+    </section>
+
+    <section id="extraoffer">
+      <div class="extraoffer_wrap">
+
+        <div class="main_img_5"></div>
+        <!-- background -->
+        <div class="extraoffer_center">
+          <div class="text_box_5"
+          >
+            <div class="h2_wrap_5">
+              <h2>서울신라호텔</h2>
+              <div class="line_wrap_5"></div>
+            </div>
+
+            <div class="text_box_inner">
+              <p>REWARDS URBAN THE VERY FIRST<br>
+                POOL PARTY CHAPTER 3</p>
+              <p>기간 : 2024년 9월 6일 ~ 7일</p>
+              <p>신라리워즈 회원전용</p>
+              <p>
+                저녁 빛이 아름다운 섬, '어번 아일랜드'로 떠나는 여행
+                몽환적인 아름다움을 선보이는 
+                세 번째 풀 파티에서 새로운 에너지를 느껴보세요.
+              </p>
+            </div>
+            <a href="#">자세히 보기</a>
+          </div>
+      </div>
+
+      </div>
+    </section>
+
+    <section id="membership">
+      
+      <div class="membership_center">
+        <div class="left_membership">
+          <div class="membership_img"></div>
+          <!-- image -->
+          <div class="membership_text_box">
+            <div class="h2_wrap_6">
+              <h2>신라에스 멤버쉽</h2>
+              <div class="line_wrap_6"></div>
+            </div>
+            <p>
+              서울 · 제주신라호텔에서 자유롭게 이용 가능한 
+              통합 유료 멤버, 신라에스
+              새롭게 선보이는 멤버쉽으로 객실과 다이닝을
+              더욱 편리하고 여유롭게 이용해 보세요!
+            </p>
+
+            <a href="#">자세히 보기</a>
+          </div>
+        </div>
+
+        <div class="right_rewards">
+          <div class="rewards_img"></div>
+          <!-- image -->
+          <div class="rewards_text_box">
+            <div class="h2_wrap_6">
+              <h2>신라리워즈</h2>
+              <div class="line_wrap_6 line_wrap_6_2"></div>
+            </div>
+            <div class="text_box_6">
+              <div>
+                <p>신라리워즈 특전</p>
+                <p>리워즈의 다양한 회원특전 상품</p>
+              </div>
+              <!-- 01 -->
+              <div>
+                <p>신라리워즈 포인트</p>
+                <p>현금처럼 사용가능한 포인트</p>
+              </div>
+              <!-- 02 -->
+              <div>
+                <p>회원전용상품</p>
+                <p>회원을 위한 상품과 이벤트</p>
+              </div>
+              <!-- 03 -->
+            </div>
+            <a href="#">가입하기</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer_center">
+      <h2>
+        <span>THE SHILLA</span>
+        <span>HOTELS & RESORTS</span>
+      </h2>
+      <div class="footer_text_box">
+        <div class="number_box">
+          <div>
+            <a href="#">서울신라호텔 02-2233-3131</a>
+            <a href="#">제주신라호텔 064-735-5114</a>
+          </div>
+          <div>
+            <a href="#">신라스테이 02-2230-0700</a>
+            <a href="#">신라리워즈 02-2230-5528</a>
+          </div>
+        </div>
+        <div class="side_box">
+          <div>
+            <a href="#">호텔신라 소개</a>
+            <a href="#">호텔개발</a>
+          </div>
+          <div>
+            <a href="#">고객문의</a>
+            <a href="#">사이트맵</a>
+          </div>
+          <div>
+            <a href="#">The Shilla shop</a>
+            <a href="#">삼성상품권</a>
+          </div>
+        </div>
+        <div class="copyright_box">
+          <span>(주) 호텔신라 서울특별시 중구 동호로 249 (우 : 04605)    대표이사 이부진    사업자등록번호 203-81-43363    </span>
+          <span>통신판매신고번호 중구00272호</span>
+          <span>호스팅서비스 제공자 삼성sds(주)</span>
+          <span>서울객실예약 shilla.reserve@samsung.com  제주객실예약 jejushilla@samsung.com</span>
+          <span>Copyright (C) HOTEL SHILLA CO.,LTD.  All Rights Reserved.</span>
+          
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- script -->
+  <script src="js/hotel_slider.js"></script>
+  <script src="js/monogram_slider.js"></script>
+  <script src="js/stay_slider.js"></script>
+  <script src="js/check_slide.js"></script>
+  <script src="js/rolling_banner.js"></script>
+  <script src="js/company_drag.js"></script>
+  <script src="js/offers_drag.js"></script>
+  <script src="js/m_btn.js"></script>
+  <script src="js/textAni.js"></script>
+  <script src="js/special_offer_hover.js"></script>
+</body>
+</html>
