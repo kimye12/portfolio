@@ -4,7 +4,6 @@ a {
   color: #333333;
 }
 
-
 .wrap {
   min-width: 1596px;
 }
@@ -14,12 +13,9 @@ header {
   position: relative;
   height: 100px;
   min-width: 1596px;
-  
-
-  
 }
 
-.header_wrap{
+.header_wrap {
   width: 100%;
   height: 100px;
   display: flex;
@@ -27,11 +23,10 @@ header {
   box-shadow: 0 2px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   z-index: 3;
-  &.sticky{
+  &.sticky {
     position: fixed;
   }
 }
-
 
 .nav {
   width: 1596px;
@@ -39,8 +34,6 @@ header {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-
-  
 
   h1 {
     margin-top: 34px;
@@ -56,7 +49,6 @@ header {
     justify-content: space-between;
     display: flex;
     margin-top: 37px;
-    
   }
   li {
     a {
@@ -65,8 +57,6 @@ header {
     }
   }
 }
-
-
 
 #visual {
   position: relative;
@@ -235,25 +225,6 @@ svg {
   }
 }
 
-.stamp1 {
-  position: absolute;
-  top: -30px;
-  right: 80px;
-  width: 200px;
-  height: 200px;
-  background: url(../image/stamp1.png) no-repeat center/cover;
-  opacity: 0.6;
-}
-.stamp2 {
-  position: absolute;
-  top: -20px;
-  right: -54px;
-  width: 200px;
-  height: 200px;
-  background: url(../image/stamp2.png) no-repeat center/cover;
-  opacity: 0.6;
-}
-
 #skills {
   position: relative;
   width: 100%;
@@ -411,7 +382,7 @@ svg {
     width: 64px;
     background: url(../image/ts.png) no-repeat center/cover;
   }
-  
+
   p {
     margin: 5px 0 0 56px;
   }
@@ -463,7 +434,7 @@ svg {
     font-size: 2.2rem;
   }
 }
-.slider{
+.slider {
   width: 100%;
   height: 800px;
   background: #f4f4f4;
@@ -472,16 +443,15 @@ svg {
   position: relative;
 }
 
-.slider_center{
+.slider_center {
   width: 1596px;
   display: flex;
   margin: 0 auto;
   overflow: hidden;
 }
-.slide{
+.slide {
   transition: transform 1s ease;
 }
-
 
 .project_1_center,
 .project_2_center,
@@ -521,7 +491,7 @@ svg {
   background: url(../image/shilla.jpg) no-repeat center/cover;
 }
 
-.fila_img{
+.fila_img {
   display: inline-block;
   width: 600px;
   height: 281px;
@@ -609,18 +579,13 @@ svg {
   }
 }
 
-
-.fila_context .tool_box{
+.fila_context .tool_box {
   span:nth-of-type(1) {
     width: 48px;
     background: url(../image/react.png) no-repeat center/cover;
   }
+
   span:nth-of-type(2) {
-    width: 37px;
-    margin: 0 20px;
-    background: url(../image/js.png) no-repeat center/cover;
-  }
-  span:nth-of-type(3) {
     width: 28px;
     background: url(../image/figma.png) no-repeat center/cover;
   }
@@ -628,55 +593,64 @@ svg {
 .hm_pager_box,
 .shilla_pager_box,
 .fila_pager_box {
-  margin: 30px 180px 0 auto;
-  
-  width: 564px;
+  margin: 50px 280px 0 auto;
+
+  width: 500px;
   height: 70px;
   display: flex;
   justify-content: space-between;
+
   a {
-    width: 168px;
+    width: 140px;
     height: 64px;
     border: none;
     border-radius: 20px;
-    background: #fff;
-    color: #333;
+    background: #333;
+    color: #fff;
     font-size: 1.8rem;
-    border: 1px solid rgba(51, 51, 51, 0.4);
+
     line-height: 1.5;
     display: flex;
     align-items: center;
     justify-content: center;
   }
+
+  a:hover {
+    background: #fff;
+    color: #333;
+  }
 }
 
-
-.slider__btn--left{
+.slider__btn--left {
   position: absolute;
-  left: 40%; bottom: 50px;
+  left: 40%;
+  bottom: 50px;
   border: none;
-  width: 50px; height: 50px;
+  width: 50px;
+  height: 50px;
   border-radius: 10px;
   background: #fff;
 }
-.slider__btn--right{
+.slider__btn--right {
   position: absolute;
-  right: 40%; bottom: 50px;
+  right: 40%;
+  bottom: 50px;
   border: none;
-  width: 50px; height: 50px;
+  width: 50px;
+  height: 50px;
   border-radius: 10px;
   background: #fff;
 }
-.dots{
+.dots {
   position: absolute;
-  left: 50%; bottom: 70px;
+  left: 50%;
+  bottom: 70px;
   transform: translateX(-50%);
   width: 68px;
   display: flex;
   justify-content: space-between;
-  
 }
-.dots__dot{
+.dots__dot {
   width: 16px;
   height: 16px;
   border-radius: 50%;
@@ -684,7 +658,7 @@ svg {
   border: none;
 }
 
-.dots__dot--active{
+.dots__dot--active {
   background: #757575;
 }
 footer {
