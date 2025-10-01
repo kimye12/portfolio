@@ -13,8 +13,8 @@ document.querySelector(".css_p").innerText =
   "미디어 쿼리를 이용한 반응형 구현\nAnimation, Keyframe 활용";
 document.querySelector(".js_p").innerText =
   "반응형 웹에 맞춘 동적 UI/UX 구현\nDom조작 및 이벤트 핸들링";
-document.querySelector(".ai_p").innerText =
-  "아이콘, 로고 디자인\nHtml에 작성할 SVG 파일 제작";
+document.querySelector(".redux_p").innerText =
+  "useDispatch,useSelector를통한\n사이트내 기능 유연한적용";
 document.querySelector(".xd_p").innerText =
   "웹 와이어 프레임과 UI/UX 설계\n디자인과 개발사이 협업";
 document.querySelector(".ts_p").innerText =
