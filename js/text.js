@@ -1,4 +1,4 @@
-document.querySelector(".main_h1").innerText = "Web Front-end\nPortfolio";
+document.querySelector(".main_h1").innerText = "Web Portfolio";
 document.querySelector(".intro_b").innerText =
   "강남 SBS 아카데미 컴퓨터아트\n프론트엔드 과정";
 
